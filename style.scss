@@ -1,0 +1,250 @@
+@import "./styles/variables";
+@import "./styles/utils";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.org-navbar {
+  width: 100%;
+  height: 152px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    padding: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+  }
+
+  &__items {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: inline-flex;
+    text-decoration: none;
+    color: var(--body-clr);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    word-wrap: break-word;
+    list-style-type: none;
+  }
+}
+
+.org-welcome {
+  position: relative;
+  padding: 160px 0;
+
+  &__wrapper {
+    max-width: 496px;
+    position: relative;
+    margin-left: 40px;
+  }
+
+  &__btn {
+    position: relative;
+    top: 36px;
+    width: 223px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: var(--secondary-clr);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 24px;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__btn-component {
+    margin-left: 24px;
+  }
+}
+
+.org-photo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 96px 0px;
+
+  &__content {
+    // max-width: 664px;
+  }
+
+  &__item {
+    max-width: 664px;
+    border-radius: 30px;
+  }
+
+  &__text-position {
+    position: relative;
+    max-width: 260px;
+    height: 10px;
+    top: -280px;
+    left: 30px;
+  }
+}
+
+.org-about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 31px;
+  background-color: var(--grey-1-clr);
+
+  &__img {
+    max-width: 864px;
+    height: 848px;
+  }
+
+  &__heading {
+    max-width: 552px;
+  }
+
+  &__body {
+    max-width: 665px;
+  }
+
+  &__wrapper {
+  }
+
+  &__text {
+    max-width: 548px;
+    padding-left: 31px;
+  }
+
+  &__white-bg {
+    margin-top: 25px;
+    min-width: 96px;
+    height: 96px;
+    background-color: var(--white-clr);
+    border-radius: 10px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 56px;
+  }
+
+  &__img-1 {
+    position: relative;
+    top: 20px;
+    left: 25px;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__shop-now {
+    width: 201px;
+    height: 80px;
+    background-color: var(--body-clr);
+    border-radius: 10px;
+    color: var(--white-clr);
+    font-size: 20px;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 56px;
+    margin-bottom: 80px;
+  }
+
+  &__btn-component {
+    margin-left: 24px;
+    z-index: 100;
+  }
+}
+
+.org-products {
+  padding-top: 96px;
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-top: 40px;
+    justify-content: center;
+  }
+
+  &__card {
+    width: 100%;
+    max-width: 432px;
+    box-sizing: border-box;
+    aspect-ratio: 432 / 592;
+    padding: 32px 32px;
+    background-color: var(--grey-1-clr);
+    border-radius: 10px;
+  }
+
+  &__card-label {
+    display: flex;
+    width: 124px;
+    height: 40px;
+    background-color: var(--body-clr);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__card-img {
+    justify-content: center;
+    width: 100%;
+
+    margin-bottom: 16px;
+  }
+
+  &__card-info {
+    display: flex;
+    gap: 45px;
+  }
+
+  &__card-info-wrapper {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__card-line {
+    width: 100%;
+    border: 1px solid var(--grey-4-clr);
+    margin: 16px 0;
+  }
+
+  &__card-info-stars {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+
+    // align-items: center;
+  }
+}

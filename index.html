@@ -1,90 +1,282 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap"
+    rel="stylesheet">
+
+  <title>Vite App</title>
+  <script type="module" crossorigin src="/assets/index-f8a53a9c.js"></script>
+  <link rel="stylesheet" href="/assets/index-965853d1.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="img/">
+
+</head>
+
+<body>
+  <div id="app">
+
+    <header class="org-navbar">
       <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="img/Logo.png" alt="Logo">
-            </div>
-            <div class="navbar__menu">
-                <ul class="navbar__items">
-                    <li><a href="">Home</a></li>
-                    <li></li><a href="">About Us</a></li>
-                    <li></li><a href="">Shop</a></li>
-                    <li></li><a href="">Pages</a></li>
-                    <li></li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
+        <div class="org-navbar__content">
+          <div class="org-navbar__logo">
+            <img src="img/Logo.png" alt="Logo">
+          </div>
+          <div class="org-navbar__menu">
+            <ul class="org-navbar__items">
+              <li><a href="">Home</a></li>
+              <li></li><a href="">About Us</a></li>
+              <li></li><a href="">Shop</a></li>
+              <li></li><a href="">Pages</a></li>
+              <li></li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="welcome">
-            <img class="welcome__img" src="img/IMAGE.png" alt="">
-            <div class="welcome-wrapper">
-              <p class="display-text">Made With Nature</p>
-              <h1 class="text-heading-1">Welcome to the world of nature and organic.</h1>
-              <button class="welcome-btn">Explore Now <img class="btn-component" src="img/Arrow.svg" alt=""></button>
-            </div>
+      </div>
+    </header>
+    <section>
+      <div class="org-welcome">
+        <div class="org-welcome__background">
+          <img class="org-welcome__img" src="img/IMAGE.png" alt="">
         </div>
-        <div class="photo-wrapper">
-          <div class="photo-wrapper-content">
-            <img class="photo-wrapper-item" src="img/IMAGE 1.png" alt="">
-            <div class="text-position">
+
+        <div class="container">
+          <div class="org-welcome__wrapper">
+            <p class="display-text">Made With Nature</p>
+            <h1 class="text-heading-1">Welcome to the world of nature and organic.</h1>
+            <button class="org-welcome__btn">Explore Now <img class="org-welcome__btn-component" src="img/Arrow.svg"
+                alt=""></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="org-photo-wrapper">
+          <div class="org-photo-wrapper__content">
+            <img class="org-photo-wrapper__item" src="img/IMAGE 1.png" alt="">
+            <div class="org-photo-wrapper__text-position">
               <p class="display-text-1">Natural!!</p>
               <h3 class="text-heading-3-1">Get Garden Fresh Fruits</h3>
-            </div>  
+            </div>
           </div>
-          <div> 
-            <img class="photo-wrapper-item" src="img/IMAGE 2.png" alt="">
-            <div class="text-position">
+          <div class="org-photo-wrapper__content">
+            <img class="org-photo-wrapper__item" src="img/IMAGE 2.png" alt="">
+            <div class="org-photo-wrapper__text-position">
               <p class="display-text">Offer!!</p>
               <h3 class="text-heading-3">Get 10% off on Vegetables</h3>
             </div>
           </div>
         </div>
-        <div class="about-us">
-          <div>
-            <img class="about-us-img" src="img/about us.png" alt="">
-          </div>
-          <div class="about-us-wrapper">
+      </div>
+    </section>
+    <section>
+      <div class="org-about-us">
+        <div class="container">
+          <div class="org-about-us__content">
+            <div>
+              <img class="org-about-us__img" src="img/about us.png" alt="">
+            </div>
+            <div class="org-about-us__wrapper">
               <p class="display-text">About Us</p>
-              <div class="about-us-heading">
+              <div class="org-about-us__heading">
                 <h2 class="text-heading-2">We Believe in Organic Foods For Strong Health</h2>
               </div>
-              <div class="about-us-body">
-                <p class="body-text-1">Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition.</p>
+              <div class="org-about-us__body">
+                <p class="body-text-1">Welcome to the world of natural and organic. Here you can discover the bounty of
+                  nature. We have grown on the principles of health, and care. We aim to give our customers a healthy
+                  chemical-free meal for perfect nutrition.</p>
               </div>
-              <div class="about-us-info">
-                <div class="about-us-content">
-                  <div class="white-bg"><img class="about-us-img-1" src="img/Food.png" alt=""></div>
-                  <div class="about-us-text">
+              <div class="org-about-us__info">
+                <div class="org-about-us__content">
+                  <div class="org-about-us__white-bg"><img class="org-about-us__img-1" src="img/Food.png" alt=""></div>
+                  <div class="org-about-us__text">
                     <p class="subtitle-text-2">Organic Foods Only</p>
-                    <p class="body-text-1">The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.</p>
+                    <p class="body-text-1">The Product that you ordered will be verified that we have or not if have we
+                      will
+                      start to move on with the next step.</p>
                   </div>
                 </div>
-                  <div class="about-us-content">
-                    <div class="white-bg"><img class="about-us-img-1" src="img/Group 5.png" alt=""></div>
-                    <div class="about-us-text">
-                      <p class="subtitle-text-2">Quality Standards</p>
-                      <p class="body-text-1">Once your product is packed it will be delivered to your nearby locality you can directly visit the to buy the product.</p>
-                    </div>
-                
+                <div class="org-about-us__content">
+                  <div class="org-about-us__white-bg"><img class="org-about-us__img-1" src="img/Group 5.png" alt="">
+                  </div>
+                  <div class="org-about-us__text">
+                    <p class="subtitle-text-2">Quality Standards</p>
+                    <p class="body-text-1">Once your product is packed it will be delivered to your nearby locality you
+                      can
+                      directly visit the to buy the product.</p>
+                  </div>
+                </div>
+                <button class="org-about-us__shop-now">Shop Now <img class="org-about-us__btn-component"
+                    src="img/Arrow.svg" alt=""></button>
               </div>
-              <button class="shop-now">Shop Now <img src="img/Arrow.svg" alt=""></button>
+            </div>
           </div>
-          
         </div>
       </div>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="org-products">
+          <div class="org-products__text-wrapper">
+            <p class="display-text">Organic</p>
+            <h2 class="text-heading-2">Our Products</h2>
+          </div>
+          <div class="org-products__cards-wrapper">
+            <div class="org-products__card">
+              <div class="org-products__card-label">
+                <p class="label-text-2-1">Vegetable</p>
+              </div>
+              <div>
+                <img class="org-products__card-img" src="img/brocoli.png" alt="">
+              </div>
+              <p class="subtitle-text-1">Calabrese Broccoli</p>
+              <div class="org-products__card-line"></div>
+              <div class="org-products__card-info">
+                <div class="org-products__card-info-wrapper">
+                  <p class="body-text-1 old-price">$ 25.00 USD</p>
+                  <p class="body-text-3">$ 21.00 USD</p>
+                </div>
+                <div class="org-products__card-info-stars">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="org-products__card">
+              <div class="org-products__card-label">
+                <p class="label-text-2-1">Vegetable</p>
+              </div>
+              <div>
+                <img class="org-products__card-img" src="img/product1.png" alt="">
+              </div>
+              <p class="subtitle-text-1">Fresh Corn</p>
+              <div class="org-products__card-line"></div>
+              <div class="org-products__card-info">
+                <div class="org-products__card-info-wrapper">
+                  <p class="body-text-1 old-price">$ 25.00 USD</p>
+                  <p class="body-text-3">$ 21.00 USD</p>
+                </div>
+                <div class="org-products__card-info-stars">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="org-products__card">
+              <div class="org-products__card-label">
+                <p class="label-text-2-1">Millets</p>
+              </div>
+              <div>
+                <img class="org-products__card-img" src="img/product2.png" alt="">
+              </div>
+              <p class="subtitle-text-1">Dried Pistachio</p>
+              <div class="org-products__card-line"></div>
+              <div class="org-products__card-info">
+                <div class="org-products__card-info-wrapper">
+                  <p class="body-text-1 old-price">$ 25.00 USD</p>
+                  <p class="body-text-3">$ 21.00 USD</p>
+                </div>
+                <div class="org-products__card-info-stars">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="org-products__card">
+              <div class="org-products__card-label">
+                <p class="label-text-2-1">Vegetable</p>
+              </div>
+              <div>
+                <img class="org-products__card-img" src="img/product3.png" alt="">
+              </div>
+              <p class="subtitle-text-1">Vegan Red Tomato</p>
+              <div class="org-products__card-line"></div>
+              <div class="org-products__card-info">
+                <div class="org-products__card-info-wrapper">
+                  <p class="body-text-1 old-price">$ 25.00 USD</p>
+                  <p class="body-text-3">$ 21.00 USD</p>
+                </div>
+                <div class="org-products__card-info-stars">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="org-products__card">
+              <div class="org-products__card-label">
+                <p class="label-text-2-1">Fruits</p>
+              </div>
+              <div>
+                <img class="org-products__card-img" src="img/product4.png" alt="">
+              </div>
+              <p class="subtitle-text-1">Organic Almonds</p>
+              <div class="org-products__card-line"></div>
+              <div class="org-products__card-info">
+                <div class="org-products__card-info-wrapper">
+                  <p class="body-text-1 old-price">$ 25.00 USD</p>
+                  <p class="body-text-3">$ 21.00 USD</p>
+                </div>
+                <div class="org-products__card-info-stars">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="org-products__card">
+              <div class="org-products__card-label">
+                <p class="label-text-2-1">Millets</p>
+              </div>
+              <div>
+                <img class="org-products__card-img" src="img/product5.png" alt="">
+              </div>
+              <p class="subtitle-text-1">Brown Hazelnut</p>
+              <div class="org-products__card-line"></div>
+              <div class="org-products__card-info">
+                <div class="org-products__card-info-wrapper">
+                  <p class="body-text-1 old-price">$ 25.00 USD</p>
+                  <p class="body-text-3">$ 21.00 USD</p>
+                </div>
+                <div class="org-products__card-info-stars">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                  <img src="img/Star.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+</body>
+
 </html>
