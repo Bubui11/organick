@@ -147,6 +147,7 @@
   letter-spacing: 0.36px;
   word-wrap: break-word;
 }
+
 .label-text-2-1 {
   color: var(--white-clr);
   font-size: 16px;
@@ -155,4 +156,20 @@
   line-height: 24px;
   letter-spacing: 0.36px;
   word-wrap: break-word;
+}
+
+.label--primary {
+  @extend .display-text-1;
+
+  color: var(--primary-clr);
+}
+
+.heading2--white {
+  @extend .text-heading-2;
+  color: #ffffff;
+}
+
+.body2--white {
+  @extend .body-text-2;
+  color: white;
 }
