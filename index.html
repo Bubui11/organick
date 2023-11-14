@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/assets/index-965853d1.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="img/">
 
 </head>
@@ -22,7 +23,7 @@
 <body>
   <div id="app">
 
-    <header class="org-navbar">
+    <!-- <header class="org-navbar">
       <div class="container">
         <div class="org-navbar__content">
           <div class="org-navbar__logo">
@@ -39,7 +40,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <section class="org-welcome">
 
@@ -60,29 +61,37 @@
 
     <section class="org-photo">
       <div class="container">
-        <div class="org-photo__wrapper">
-          <div class="org-photo__content">
-            <img class="org-photo__item" src="img/IMAGE 1.png" alt="">
-            <div class="org-photo__text-position">
-              <p class="display-text-1">Natural!!</p>
-              <h3 class="text-heading-3-1">Get Garden Fresh Fruits</h3>
+
+        <div class="org-photo__content-wrapper">
+          <div class="org-photo__content-part">
+            <div class="org-photo__bg">
+              <img class="org-photo__img" src="img/IMAGE 1.png" alt="">
+            </div>
+            <div class="org-photo__content">
+              <p class="display-text">Natural!!</p>
+              <h3 class="text-heading-3 org-photo__text-wrapper">Get Garden Fresh Fruits</h3>
             </div>
           </div>
-          <div class="org-photo__content">
-            <img class="org-photo__item" src="img/IMAGE 2.png" alt="">
-            <div class="org-photo__text-position">
-              <p class="display-text">Offer!!</p>
-              <h3 class="text-heading-3">Get 10% off on Vegetables</h3>
+          <div class="org-photo__content-part">
+            <div class="org-photo__bg">
+              <img class="org-photo__img" src="img/IMAGE 2.png" alt="">
+            </div>
+            <div class="org-photo__content">
+              <p class="display-text">Offer!!!!</p>
+              <h3 class="text-heading-3 org-photo__text-wrapper">Get 10% off on Vegetables</h3>
             </div>
           </div>
         </div>
       </div>
+
     </section>
+
+
     <section>
       <div class="org-about-us">
         <div class="container">
           <div class="org-about-us__content">
-            <div>
+            <div class="org-about-us__bg">
               <img class="org-about-us__img" src="img/about us.png" alt="">
             </div>
             <div class="org-about-us__wrapper">
@@ -96,7 +105,7 @@
                   chemical-free meal for perfect nutrition.</p>
               </div>
               <div class="org-about-us__info">
-                <div class="org-about-us__content">
+                <div class="org-about-us__content-info">
                   <div class="org-about-us__white-bg"><img class="org-about-us__img-1" src="img/Food.png" alt=""></div>
                   <div class="org-about-us__text">
                     <p class="subtitle-text-2">Organic Foods Only</p>
@@ -105,7 +114,7 @@
                       start to move on with the next step.</p>
                   </div>
                 </div>
-                <div class="org-about-us__content">
+                <div class="org-about-us__content-info">
                   <div class="org-about-us__white-bg"><img class="org-about-us__img-1" src="img/Group 5.png" alt="">
                   </div>
                   <div class="org-about-us__text">
@@ -285,8 +294,12 @@
 
 
         <div class="review__text-position">
-          <p class="display-text">Testimonial</p>
-          <h2 class="text-heading-2">What Our Customer Saying?</h2>
+          <div class="review__text-center">
+            <p class="display-text">Testimonial</p>
+          </div>
+          <div class="review__text-center">
+            <h2 class="text-heading-2 ">What Our Customer Saying?</h2>
+          </div>
         </div>
         <div>
           <div class="review__img-position">
@@ -400,6 +413,7 @@
         </div>
       </div>
     </section>
+
     <section class="eco-friendly">
 
       <div class="eco-friendly__wrapper">
@@ -435,6 +449,7 @@
         </div>
       </div>
     </section>
+
     <section class="cards">
       <div class="container">
         <div class="cards__wrapper">
@@ -466,90 +481,76 @@
       </div>
     </section>
 
-    <section class="news">
-      <div class="news__bg-wrapper">
-        <div class="news__bg">
-
-          <div> <img class="news__bg-img" src="img/newsbg1.png" alt=""></div>
-          <div> <img class="news__bg-img" src="img/newsbg2.png" alt=""></div>
-
-        </div>
-      </div>
+    <!-- <section class="news">
       <div class="container">
-        <div class="news__intro-wrapper">
-          <div> <label class="display-text" for=""> News</label>
-            <h2 class="text-heading-2"> Discover content about organic products</h2>
+        <div class="news__intro">
+          <div class="news__intro-text">
+            <p class="display-text">News</p>
+            <h2 class="text-heading-2">Discover content about organic products</h2>
           </div>
-          <div class="news__btn"> <button class="news__intro-btn body-text-2"> More News<img src="img/Arrow.svg" alt="">
-            </button>
-          </div>
+          <div class="news__intro-btn"><button class="news__intro-btn body-text-2">More News <img
+                class="news__btn-element" src="img/Arrow.svg" alt=""></button></div>
         </div>
-        <div class="news__content-wrapper">
-          <div class="news__content-wrapper-part">
-            <div class="news__circle">
-              <div class="news__content-circle">
-                <p class="text-heading-4"> 14</p>
-                <p class="label-text-1"> Feb</p>
-              </div>
+        <div class="news__wrapper">
+          <div class="news__content">
+            <div class="news__content-bg">
+              <img class="news__content-bg-img" src="img/newsbg1.png" alt="">
             </div>
-            <div class="news__info-wrapper">
-              <div class="news__info-intro"> <img class="news__user" src="img/User.png" alt="">
-                <p class="body-text-1"> Kristina
-                  Castle</p>
+            <div class="news__block">
+              <div class="news__block-circle">
+                <div class="news__circle">
+                  <h4 class="text-heading-4">14</h4>
+                  <p class="label-text-1">Fep</p>
+                </div>
               </div>
-              <div class="news__text-wrapper">
-                <h4 class="subtitle-text-3 news__subtitle"> Everything
-                  You Nee to Know About Organic</h4>
-                <p class="body-text-1 news__body-text"> Organic farming is the only way that you still can experience
-                  the real world.
-                </p> <button class="news__info-btn body-text-2"> View More<img src="img/Arrow.svg" alt=""> </button>
+              <div class="news__block-content">
+                <div class="news__block-content-user">
+                  <img class="news__user" src="img/User.png" alt="">
+                  <p class="body-text-1">Kristina Castle</p>
+                </div>
+                <div class="news__block-content-text">
+                  <p class="subtitle-text-3">Everything You Need to Know About Organic</p>
+                  <p class="body-text-1">Organic farming is the only way that you still can experience the real world.
+                  </p>
+                </div>
+                <div class="news__block-content-btn">
+                  <button class="news__block-btn body-text-2">View More <img src="img/Arrow.svg" alt=""></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="news__content-wrapper-part">
-            <div class="news__circle">
-              <div class="news__content-circle">
-                <p class="text-heading-4"> 24</p>
-                <p class="label-text-1"> Sep</p>
-              </div>
+          <div class="news__content">
+            <div class="news__content-bg">
+              <img class="news__content-bg-img" src="img/newsbg2.png" alt="">
             </div>
-            <div class="news__info-wrapper">
-              <div class="news__info-intro"> <img class="news__user" src="img/User.png" alt="">
-                <p class="body-text-1"> Kristina
-                  Castle</p>
+            <div class="news__block">
+              <div class="news__block-circle">
+                <div class="news__circle">
+                  <h4 class="text-heading-4">24</h4>
+                  <p class="label-text-1">Sep</p>
+                </div>
               </div>
-              <div class="news__text-wrapper">
-                <h4 class="subtitle-text-3 news__subtitle"> Everything
-                  You
-                  Need
-                  to
-                  Know
-                  About
-                  Organic</h4>
-                <p class="body-text-1 news__body-text"> Organic
-                  farming
-                  is
-                  the
-                  only
-                  way
-                  that
-                  you
-                  still
-                  can
-                  experience
-                  the
-                  real
-                  world.</p> <button class="news__info-btn body-text-2"> View
-                  More
-                  <img src="img/Arrow.svg" alt=""> </button>
+              <div class="news__block-content">
+                <div class="news__block-content-user">
+                  <img class="news__user" src="img/User.png" alt="">
+                  <p class="body-text-1">Alex Louis</p>
+                </div>
+                <div class="news__block-content-text">
+                  <p class="subtitle-text-3">Organic Fruits: Surprising Benefits and Facts</p>
+                  <p class="body-text-1">The world of nature has grown on the principles of health, ecology, and care.
+                  </p>
+                </div>
+                <div class="news__block-content-btn">
+                  <button class="news__block-btn body-text-2">View More <img src="img/Arrow.svg" alt=""></button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="outro">
+    <!-- <section class="outro">
       <div class="container">
         <div class="outro__bg">
           <img class="outro__bg-img" src="img/outrobg.png" alt="">
@@ -565,7 +566,8 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
@@ -616,6 +618,7 @@
         </div>
       </div>
     </footer>
+
     <section class="copyright">
       <div class="container">
         <div class="copyright__end  ">
